@@ -33,3 +33,28 @@ footer {
     justify-content: flex-end;
     background-color: var(--footer-background);
 }
+a {
+    text-decoration: none;
+    color: black
+}
+#warship-list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 50px;
+}
+
+.warship-card {
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: solid 1px black;
+    width: 200px;
+    height: 200px;
+}
