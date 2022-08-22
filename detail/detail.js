@@ -10,9 +10,7 @@ async function loadData() {
       // fetch all dogs
     const data = await getShips(params.get('id'));
       // render and append all dog cards to the container
-    for (let item of data) {
-        const shipDiv = renderShipDetail(item);
-        warshipDetailContainerEl.append(shipDiv);
-    }
+    const shipDiv = renderShipDetail(data);
+    warshipDetailContainerEl.append(shipDiv);
 }
 loadData();
